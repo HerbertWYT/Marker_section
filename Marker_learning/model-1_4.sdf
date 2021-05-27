@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+  <model name="Marker_learning">
+    <static>true</static>
+    <link name="link">
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.4 0.4 0.01</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <box>
+            <size>0.4 0.4 0.01</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://Marker_learning/materials/scripts</uri>
+            <uri>model://Marker_learning/materials/textures</uri>
+            <name>vrc/marker_t</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>
